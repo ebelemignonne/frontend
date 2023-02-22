@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+import "bulma/css/bulma.css"; //import famework bulma
+import 'bootstrap/dist/css/bootstrap.min.css' ; //import famework bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min' ; //import famework bootstrap
+
+import axios from "axios";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+axios.defaults.withCredentials = true;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
