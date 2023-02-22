@@ -1,0 +1,23 @@
+.login{
+    
+    justify-content: space-evenly;
+}
+
+
+.login3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* foot loging */
+.foot_loging{
+    height: 20vh;
+    width: 100%;
+}
+
+
+
+
+
+
