@@ -25,7 +25,7 @@ const Login = () => {
     }
  
     return (
-        <section className="container bg-secondary w-100">
+        <section className="container bg-success w-100">
             <div className="container">
                 <div className="container">
                     <div className="columns is-centered">
@@ -38,7 +38,7 @@ const Login = () => {
                                         <input type="text" className="form-control" placeholder="Username" value={email} onChange={(e) => setEmail(e.target.value)} />
                                     </div>
                                 </div>
-                                <div className="field mt-5">
+                                <div className="field mt-4">
                                     <label className="label">Password</label>
                                     <div className="controls">
                                         <input type="password" className="form-control" placeholder="******" value={password} onChange={(e) => setPassword(e.target.value)} />
