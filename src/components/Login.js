@@ -25,9 +25,6 @@ const Login = () => {
         }
     }
 
-    // const Elat = () =>{
-    //     <Link to="ElatZame"></Link>
-    // }
  
     return (
         <section className="login hero has-background-grey-light is-fullheight is-fullwidth">
@@ -51,20 +48,14 @@ const Login = () => {
                                     </div>
                                 </div>
                                 <div className="field mt-5">
-                                    <button className="button is-success is-fullwidth">Login</button>
+                                    <Link to="/Home" className="button is-success is-fullwidth">Login</Link>
                                 </div>
                             </form>
                         </div>
                         <p>Si vous n'avez pas un compte creer un ici</p>
                         <Link to="/Register">Creer un compte</Link>
                     </div>
-                <div className='foot_loging '>
-                    
-                    <div class="d-grid gap-2">
-                        <Link to="/Dashboard" class="btn btn-outline-light" type="button">Dashboard</Link>
-                        <button class="btn btn-outline-light" type="button">Button</button>
-                    </div>
-                </div>
+
                 </div>
             </div>
         </section>
