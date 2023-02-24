@@ -5,10 +5,12 @@ import { Icon } from '@iconify/react';
 import keyReturnThin from '@iconify/icons-ph/key-return-thin';
 import "./Home.css"
 import { Link } from "react-router-dom";
+import Navbar from "./ServicesE/navbar";
 
 export default function Home() {
 return (
 	<div id='gfg' className='hero has-background-grey-light is-fullheight is-fullwidth'>
+        <Navbar />
         <div className="head_home d-flex justify-content-evenly align-items-center pl-5">
             <h2 className=" ms-5">Elat Zame communauty vous souhaite bienvenue</h2>
             <Link className="" to="/"><Icon icon={keyReturnThin} color="#414648" width="100" height="100" /></Link>
@@ -18,7 +20,7 @@ return (
                 <img src={sculpture} alt="logo sculpture"
                 className='w-60' />
             </Link>
-            <Link to="service" class='im' style={{ maxWidth: '20rem' }}>
+            <Link to="/Services" class='im' style={{ maxWidth: '20rem' }}>
                 <img src={dev} alt="logo sculpture"
                 className='w-60' />
             </Link>

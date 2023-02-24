@@ -1,8 +1,9 @@
-import React from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import logo from './images/Sculpture.png'
+import { Link } from 'react-router-dom';
  
-const Navbar = () => {
+const NavbarP = () => {
     const history = useNavigate();
  
     const Logout = async () => {
@@ -15,25 +16,25 @@ const Navbar = () => {
     }
  
     return (
-        <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+        <nav className="navbar bg-secondary" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="logo" />
-                    </a>
+                    <Link className="navbar-item" href="https://bulma.io">
+                        <img src={logo}  width="30" height="30" alt="logo" />
+                    </Link>
  
-                    <a href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <Link href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </a>
+                    </Link>
                 </div>
  
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <a href="/" className="navbar-item">
-                            Home
-                        </a>
+                        <Link href="/" className="navbar-item text-decoration-none">
+                          Maison
+                        </Link>
                     </div>
  
                     <div className="navbar-end">
@@ -51,4 +52,4 @@ const Navbar = () => {
     )
 }
  
-export default Navbar
+export default NavbarP
