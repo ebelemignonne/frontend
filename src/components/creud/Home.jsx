@@ -1,11 +1,11 @@
 import React from "react";
-import sculpture from "./images/Sculpture.png"
-import dev from "./images/Dev.png"
+import sculpture from "../images/Sculpture.png"
+import dev from "../images/Dev.png"
 import { Icon } from '@iconify/react';
 import keyReturnThin from '@iconify/icons-ph/key-return-thin';
 import "./Home.css"
 import { Link } from "react-router-dom";
-import Navbar from "./ServicesE/navbar";
+import Navbar from "../ServicesE/navbar";
 
 export default function Home() {
 return (

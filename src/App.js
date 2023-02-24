@@ -4,14 +4,15 @@ import "./App.css";
 
 //importation les pages principale
 import Elat from "./components/elat";
-import Dashboard from "./components/Dashboard";
-import Login from "./components/Login";
+import Dashboard from "./components/creud/Dashboard";
+import Login from "./components/creud/Login";
 import NavbarP from "./components/Navbar";
-import Register from "./components/Register";
-import Home from "./components/Home";
+import Register from "./components/creud/Register";
+import Home from "./components/creud/Home";
 
  
 // importation des pages intermediaire
+import Sculpture from "./components/Sculpture/sculpture";
 import Services from "./components/ServicesE/servives";
 
 
@@ -29,6 +30,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />}/>
             <Route path="/navbar" element={<NavbarP />} />
             <Route path="/home" element={<Home />} />
+            {/* routes intermediaire */}
+            <Route path="/sculpture" element={<Sculpture />} />
             <Route path="/services" element={<Services />} />
           </Routes>
           </div>

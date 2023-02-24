@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import baselineDiscord from '@iconify/icons-ic/baseline-discord';
 
 
 
@@ -44,8 +43,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" to="https://discord.com/invite/TGZqBvZB" rel="nofollow" target="_blank">
-                <Icon icon={baselineDiscord} color="#4b2e39" width="24" height="24" />
+              <Link  className="btn btn-light  nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" to="/" rel="nofollow">
+                <Icon icon="carbon:drill-back" color="#4b2e39" width="24" height="24" /> 
+                Revenir a l'accueil
               </Link>
             </li>
           </ul>

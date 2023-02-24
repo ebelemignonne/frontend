@@ -16,7 +16,7 @@ const NavbarP = () => {
     }
  
     return (
-        <nav className="navbar bg-secondary" role="navigation" aria-label="main navigation">
+        <nav className="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
                     <Link className="navbar-item" href="https://bulma.io">
@@ -40,7 +40,7 @@ const NavbarP = () => {
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <div className="buttons">
-                                <button onClick={Logout} className="button is-light">
+                                <button onClick={Logout} className="btn btn-outline-secondary">
                                     Log Out
                                 </button>
                             </div>
