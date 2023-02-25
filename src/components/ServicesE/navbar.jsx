@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
+// import React, { useState, useEffect } from "react";
+// import { InputBase, makeStyles } from "@material-ui/core";
+// import SearchIcon from "@material-ui/icons/Search";
 
 
 
@@ -18,6 +21,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navigation">
           <ul className="navbar-nav ms-auto">
+            {/* <SearchBar /> */}
             <li className="nav-item">
               <Link className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" to="/astro-ecommerce/">
                 Tous nos services
@@ -54,5 +58,81 @@ const Navbar = () => {
     </nav>
   );
 };
+
+
+
+
+
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     display: "flex",
+//     alignItems: "center",
+//     borderRadius: theme.shape.borderRadius,
+//     backgroundColor: theme.palette.common.white,
+//     "&:hover": {
+//       backgroundColor: theme.palette.action.hover,
+//     },
+//     marginLeft: 0,
+//     width: "100%",
+//     [theme.breakpoints.up("sm")]: {
+//       marginLeft: theme.spacing(1),
+//       width: "auto",
+//     },
+//   },
+//   input: {
+//     padding: theme.spacing(1, 1, 1, 0),
+//     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+//     transition: theme.transitions.create("width"),
+//     width: "100%",
+//     [theme.breakpoints.up("md")]: {
+//       width: "20ch",
+//     },
+//   },
+//   searchIcon: {
+//     padding: theme.spacing(0, 2),
+//     height: "100%",
+//     position: "absolute",
+//     pointerEvents: "none",
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//   },
+// }));
+
+// function SearchBar({ onSearch }) {
+//   const classes = useStyles();
+//   const [searchText, setSearchText] = useState("");
+  
+//   useEffect(() => {
+//     // Effectue une recherche à chaque fois que la valeur de searchText est modifiée
+//     onSearch(searchText);
+//   }, [searchText]);
+
+//   const handleSearch = (event) => {
+//     setSearchText(event.target.value);
+//   };
+
+//   return (
+//     <div className={classes.root}>
+//       <div className={classes.searchIcon}>
+//         <SearchIcon />
+//       </div>
+//       <InputBase
+//         placeholder="Recherche..."
+//         classes={{
+//           input: classes.input,
+//         }}
+//         value={searchText}
+//         onChange={handleSearch}
+//       />
+//     </div>
+//   );
+// }
+
+
+
+
+
+
 
 export default Navbar;

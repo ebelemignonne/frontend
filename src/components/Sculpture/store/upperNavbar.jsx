@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 export default function UpperNavbar() {
   return (
-      <div className="bg-secondary w-100">
+      <div className="bg-secondary w-100 navbar  navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-0 start-0 end-0">
       <div className="w-100 bg-primary-900">
         <div className="container align-items-center d-flex">
           <ul className="navbar-nav">

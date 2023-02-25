@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function StoreNavbar() {
   return (
     <>
-      <div className="container py-2">
+      <div className="container shadow">
         <nav aria-label="breadcrumb">
           <div className="d-flex align-items-center me-md-12">
             <i className="fas fa-wind text-lg text-primary"></i>
@@ -13,22 +13,22 @@ export default function StoreNavbar() {
         <ul className="navbar-nav d-none d-lg-flex ps-md-8">
           <li className="nav-item px-3 py-3 border-radius-sm d-flex align-items-center">
             <Link to="#" className="nav-link p-0">
-              Women
+              Spirituel
             </Link>
           </li>
           <li className="nav-item px-3 py-3 border-radius-sm d-flex align-items-center">
             <Link to="#" className="nav-link p-0">
-              Men
+              Decoration
             </Link>
           </li>
           <li className="nav-item px-3 py-3 border-radius-sm d-flex align-items-center">
             <Link to="#" className="nav-link p-0">
-              Company
+              Art modern
             </Link>
           </li>
           <li className="nav-item px-3 py-3 border-radius-sm d-flex align-items-center">
             <Link to="#" className="nav-link p-0">
-              Stores
+            Magasins
             </Link>
           </li>
         </ul>
@@ -45,12 +45,12 @@ export default function StoreNavbar() {
             </li>
             <li className="nav-item px-3 d-flex align-items-center">
               <Link to="/" className="nav-link p-0">
-                <h6 className="mb-0 text-sm">Search</h6>
+                <h6 className="mb-0 text-sm">Rechercher</h6>
               </Link>
             </li>
             <li className="nav-item px-3 d-flex align-items-center">
               <Link to="/" className="nav-link p-0">
-                <h6 className="mb-0 text-sm">Help</h6>
+                <h6 className="mb-0 text-sm">Besoin d'aide</h6>
               </Link>
             </li>
             <li className="nav-item px-3 d-flex align-items-center">

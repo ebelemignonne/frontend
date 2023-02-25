@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import logo from './images/Sculpture.png'
 import { Link } from 'react-router-dom';
+import Pays from './petitComposant/Pays';
  
 const NavbarP = () => {
     const history = useNavigate();
@@ -19,11 +20,11 @@ const NavbarP = () => {
         <nav className="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
-                    <Link className="navbar-item" href="https://bulma.io">
+                    <Link className="navbar-item" to="https://bulma.io">
                         <img src={logo}  width="30" height="30" alt="logo" />
                     </Link>
  
-                    <Link href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <Link to="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -32,11 +33,20 @@ const NavbarP = () => {
  
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-start">
-                        <Link href="/" className="navbar-item text-decoration-none">
+                        <Link to="/" className="navbar-item text-decoration-none">
+                          Maison
+                        </Link>
+                        <Link to="/Ebele" className="navbar-item text-decoration-none">
+                          Ebele
+                        </Link>
+                        <Link to="/" className="navbar-item text-decoration-none">
+                          Maison
+                        </Link>
+                        <Link to="/" className="navbar-item text-decoration-none">
                           Maison
                         </Link>
                     </div>
- 
+                    <Pays />
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <div className="buttons">
